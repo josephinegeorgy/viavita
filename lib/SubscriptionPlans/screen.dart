@@ -22,7 +22,7 @@ class SubscriptionPlanWidget extends StatelessWidget {
                 child: Row(
                   children: [
                     Image.asset('assets/back_arrow.png', height: 12, width: 6),
-                    SizedBox(width: 10),
+                    SizedBox(width: mediaquery.width*0.01),
                     Text(
                       'Subscription',
                       style: TextStyle(
