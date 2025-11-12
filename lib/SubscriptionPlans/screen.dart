@@ -22,7 +22,7 @@ class SubscriptionPlanWidget extends StatelessWidget {
                 child: Row(
                   children: [
                     Image.asset('assets/back_arrow.png', height: 12, width: 6),
-                    SizedBox(width: mediaquery.width*0.01),
+                    SizedBox(width: mediaquery.width*0.10),
                     Text(
                       'Subscription',
                       style: TextStyle(
@@ -47,7 +47,7 @@ class SubscriptionPlanWidget extends StatelessWidget {
                       cycle: '3+ Months',
                       buttonText: 'Free',
                     ),
-                    SizedBox(height: 10),
+                    SizedBox(height: mediaquery.height*0.01),
                     PlansWidget(
                       planName: '3+ Months Plan',
                       content:
@@ -56,7 +56,7 @@ class SubscriptionPlanWidget extends StatelessWidget {
                       cycle: 'Monthly',
                       buttonText: 'pay ₹600/Month',
                     ),
-                    SizedBox(height: 10),
+                    SizedBox(height: mediaquery.height*0.01),
 
                     PlansWidget(
                       planName: 'Yearly Plan',
@@ -66,7 +66,7 @@ class SubscriptionPlanWidget extends StatelessWidget {
                       cycle: 'Yearly',
                       buttonText: 'pay ₹3,000/Year',
                     ),
-                    SizedBox(height: 20),
+                    SizedBox(height: mediaquery.height*0.02),
                   ],
                 ),
               ),
