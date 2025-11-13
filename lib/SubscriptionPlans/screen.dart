@@ -45,7 +45,7 @@ class SubscriptionPlanWidget extends StatelessWidget {
                           'Unlock exclusive features and enjoy an ad-free experience. ',
                       price: '0',
                       cycle: '3+ Months',
-                      buttonText: 'Free',
+                      buttonText: 'Free',showButton: true,
                     ),
                     SizedBox(height: mediaquery.height*0.01),
                     PlansWidget(
@@ -54,7 +54,7 @@ class SubscriptionPlanWidget extends StatelessWidget {
                           'Unlock exclusive features and enjoy an ad-free experience. ',
                       price: '₹600',
                       cycle: 'Monthly',
-                      buttonText: 'pay ₹600/Month',
+                      buttonText: 'pay ₹600/Month',showButton: true,
                     ),
                     SizedBox(height: mediaquery.height*0.01),
 
@@ -64,7 +64,7 @@ class SubscriptionPlanWidget extends StatelessWidget {
                           'Unlock exclusive features and enjoy an ad-free experience. ',
                       price: '₹500/Month',
                       cycle: 'Yearly',
-                      buttonText: 'pay ₹3,000/Year',
+                      buttonText: 'pay ₹3,000/Year',showButton: true,
                     ),
                     SizedBox(height: mediaquery.height*0.02),
                   ],

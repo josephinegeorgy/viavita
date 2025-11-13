@@ -7,4 +7,6 @@ class AppColors {
   static const Color captionColor = Color.fromARGB(255, 105, 113, 129);
   static const Color cardBorder = Color.fromARGB(255,236, 236, 236);
  static const Color white = Color.fromARGB(255,255, 255, 255);
+  static const Color textfieldbg = Color.fromARGB(255,250, 250, 250);
+
 }
