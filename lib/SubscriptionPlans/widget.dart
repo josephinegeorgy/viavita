@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:viavita/SubscriptionDetail/screen.dart';
+import 'package:viavita/filledbuttonwidget.dart';
 import 'package:viavita/colors.dart';
 
 class PlansWidget extends StatelessWidget {
@@ -8,7 +9,9 @@ class PlansWidget extends StatelessWidget {
   final String price;
   final String cycle;
   final String buttonText;
-  final bool showButton;
+    final bool showButton;
+      final double containerwidth;
+  final double containerheight;
 
   const PlansWidget({
     super.key,
@@ -18,6 +21,8 @@ class PlansWidget extends StatelessWidget {
     required this.cycle,
     required this.buttonText,
     required this.showButton,
+      required this.containerwidth,
+  required this.containerheight,
   });
 
   @override
@@ -35,15 +40,15 @@ class PlansWidget extends StatelessWidget {
     );
 
     return Container(
-      height: 226,
-      width: double.infinity,
+      height: containerheight,
+      width: containerwidth,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(10),
         border: Border.all(color: AppColors.cardBorder, width: 1),
       ),
       child: Padding(
-        padding: const EdgeInsets.only(left: 20,right: 20),
+        padding: const EdgeInsets.only(left: 20, right: 20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -59,7 +64,7 @@ class PlansWidget extends StatelessWidget {
             ),
             SizedBox(height: mediaquery.height * 0.03),
             Text(content, style: datatextstyle),
-            SizedBox(height: mediaquery.height * 0.02),
+            SizedBox(height: mediaquery.height * 0.01),
             Row(
               children: [
                 Text('Price:', style: subtitletextstyle),
@@ -78,10 +83,10 @@ class PlansWidget extends StatelessWidget {
               ],
             ),
             SizedBox(height: mediaquery.height * 0.02),
-            if (showButton)
+            if (showButton && buttonText.isNotEmpty)
               GestureDetector(
                 onTap: () {
-                  print('clicked');
+                  print('click');
                   Navigator.push(
                     context,
                     MaterialPageRoute(
@@ -89,29 +94,8 @@ class PlansWidget extends StatelessWidget {
                     ),
                   );
                 },
-                child: Container(
-                  width: 350,
-                  height: 45,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      colors: [AppColors.buttonShade1, AppColors.buttonShade2],
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                    ),
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-
-                  child: Center(
-                    child: Text(
-                      buttonText,
-                      style: TextStyle(
-                        color: AppColors.white,
-                        fontWeight: FontWeight.w500,
-                        fontSize: 18,
-                      ),
-                    ),
-                  ),
-                ),
+                child: 
+                FilledButtonWidget(buttontext: buttonText, buttonwidth: 350, buttonheight: 45)
               ),
           ],
         ),

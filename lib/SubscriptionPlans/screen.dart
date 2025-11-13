@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:viavita/SubscriptionPlans/Widget.dart';
+import 'package:viavita/appbarwidget.dart';
 import 'package:viavita/colors.dart';
 
 class SubscriptionPlanWidget extends StatelessWidget {
@@ -11,30 +12,11 @@ class SubscriptionPlanWidget extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.white,
       body: Padding(
-        padding: const EdgeInsets.only(left: 20.0, right: 20.0, top: 20.0),
+        padding: const EdgeInsets.only(left: 15.0, right: 15.0, top: 20.0),
         child: Column(
           children: [
-            SizedBox(height: mediaquery.height*0.02),
-            Container(
-              height: 60,
-              width: double.infinity,
-              child: Center(
-                child: Row(
-                  children: [
-                    Image.asset('assets/back_arrow.png', height: 12, width: 6),
-                    SizedBox(width: mediaquery.width*0.10),
-                    Text(
-                      'Subscription',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w500,
-                        color: AppColors.textColor,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
+            SizedBox(height: mediaquery.height * 0.02),
+            AppBarWidget(title: 'Subscription'),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
@@ -45,18 +27,24 @@ class SubscriptionPlanWidget extends StatelessWidget {
                           'Unlock exclusive features and enjoy an ad-free experience. ',
                       price: '0',
                       cycle: '3+ Months',
-                      buttonText: 'Free',showButton: true,
+                      buttonText: 'Free',
+                      showButton: true,
+                      containerwidth: 390,
+                      containerheight: 226,
                     ),
-                    SizedBox(height: mediaquery.height*0.01),
+                    SizedBox(height: mediaquery.height * 0.01),
                     PlansWidget(
                       planName: '3+ Months Plan',
                       content:
                           'Unlock exclusive features and enjoy an ad-free experience. ',
                       price: '₹600',
                       cycle: 'Monthly',
-                      buttonText: 'pay ₹600/Month',showButton: true,
+                      buttonText: 'pay ₹600/Month',
+                      showButton: true,
+                      containerwidth: 390,
+                      containerheight: 226,
                     ),
-                    SizedBox(height: mediaquery.height*0.01),
+                    SizedBox(height: mediaquery.height * 0.01),
 
                     PlansWidget(
                       planName: 'Yearly Plan',
@@ -64,9 +52,12 @@ class SubscriptionPlanWidget extends StatelessWidget {
                           'Unlock exclusive features and enjoy an ad-free experience. ',
                       price: '₹500/Month',
                       cycle: 'Yearly',
-                      buttonText: 'pay ₹3,000/Year',showButton: true,
+                      buttonText: 'pay ₹3,000/Year',
+                      showButton: true,
+                      containerwidth: 390,
+                      containerheight: 226,
                     ),
-                    SizedBox(height: mediaquery.height*0.02),
+                    SizedBox(height: mediaquery.height * 0.02),
                   ],
                 ),
               ),
