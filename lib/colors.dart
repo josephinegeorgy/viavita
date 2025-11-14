@@ -9,4 +9,6 @@ class AppColors {
  static const Color white = Color.fromARGB(255,255, 255, 255);
   static const Color textfieldbg = Color.fromARGB(255,250, 250, 250);
 
+ static const Color iconbg = Color.fromARGB(255,255, 227, 219);
+
 }
