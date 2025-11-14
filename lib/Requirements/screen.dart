@@ -54,7 +54,7 @@ class _RequirementsWidgetState extends State<RequirementsWidget> {
                     ),
                     Container(
                       height: mediaquery.height * 0.04,
-                      width: 89,
+                      width: mediaquery.width*.25,
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
                           colors: [
@@ -73,8 +73,7 @@ class _RequirementsWidgetState extends State<RequirementsWidget> {
                           children: [
                             Image.asset(
                               'assets/add.png',
-                              width: 24,
-                              height: 24,
+                               scale: 5,
                             ),
                             Text(
                               'Add',

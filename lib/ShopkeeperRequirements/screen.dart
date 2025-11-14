@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:viavita/ShopkeeperRequirements/widget.dart';
-import 'package:viavita/SubscriptionDetail/widget.dart';
+import 'package:viavita/textfieldwidget.dart';
 import 'package:viavita/appbarwidget.dart';
 import 'package:viavita/colors.dart';
 import 'package:viavita/filledbuttonwidget.dart';

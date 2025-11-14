@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:viavita/CommonWidgets/filledbuttonwidget.dart';
 import 'package:viavita/SubscriptionDetail/screen.dart';
-import 'package:viavita/filledbuttonwidget.dart';
-import 'package:viavita/colors.dart';
+import 'package:viavita/CommonWidgets/colors.dart';
 
 class PlansWidget extends StatelessWidget {
   final String planName;

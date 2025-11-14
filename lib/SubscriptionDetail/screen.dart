@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:viavita/Requirements/screen.dart';
-import 'package:viavita/SubscriptionDetail/widget.dart';
+import 'package:viavita/textfieldwidget.dart';
 import 'package:viavita/SubscriptionPlans/Widget.dart';
 import 'package:viavita/appbarwidget.dart';
 import 'package:viavita/filledbuttonwidget.dart';
