@@ -23,6 +23,14 @@ class CountContainerWidgets extends StatelessWidget {
         color: bgColor,
         borderRadius: BorderRadius.circular(10),
         border: Border.all(color: AppColors.containerborder, width: 1),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.3),
+              spreadRadius: 1,
+              blurRadius: 5,
+              offset: const Offset(0, 4),
+            ),
+          ],
       ),
       child: Padding(
         padding: const EdgeInsets.all(10.0),

@@ -17,6 +17,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(fontFamily: GoogleFonts.poppins().fontFamily),
-      home: SKHomePageWidget(), debugShowCheckedModeBanner: false);
+      home: WorkerHomeWidget(), debugShowCheckedModeBanner: false);
   }
 }
