@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:viavita/colors.dart';
+import 'package:viavita/CommonWidgets/colors.dart';
 
 class AppBarWidget extends StatelessWidget {
   final String title;

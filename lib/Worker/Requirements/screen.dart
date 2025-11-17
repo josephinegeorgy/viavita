@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:viavita/colors.dart';
-import 'package:viavita/filledbuttonwidget.dart';
-import 'package:viavita/unfilledbuttonwidget.dart';
+import 'package:viavita/CommonWidgets/colors.dart';
+import 'package:viavita/CommonWidgets/filledbuttonwidget.dart';
+import 'package:viavita/CommonWidgets/unfilledbuttonwidget.dart';
+import 'package:viavita/Worker/Shop/screen.dart';
 
 class RequirementsWidget extends StatefulWidget {
   const RequirementsWidget({super.key});
@@ -130,6 +131,15 @@ class _RequirementsWidgetState extends State<RequirementsWidget> {
 
           ],
         ),
+        
+      ),
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: GestureDetector(
+            onTap: () {
+        Navigator.push(context, MaterialPageRoute(builder:  (context) => WorkerShopWidget()));
+      },
+          child: FilledButtonWidget(buttontext: 'Save', buttonwidth: 390, buttonheight: 55)),
       ),
     );
   }

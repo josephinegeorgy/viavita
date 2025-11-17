@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:viavita/textfieldwidget.dart';
-import 'package:viavita/appbarwidget.dart';
-import 'package:viavita/colors.dart';
-import 'package:viavita/filledbuttonwidget.dart';
+import 'package:viavita/CommonWidgets/textfieldwidget.dart';
+import 'package:viavita/CommonWidgets/appbarwidget.dart';
+import 'package:viavita/CommonWidgets/colors.dart';
+import 'package:viavita/CommonWidgets/filledbuttonwidget.dart';
 
 class AcceptedTaskWidget extends StatefulWidget {
   const AcceptedTaskWidget({super.key});

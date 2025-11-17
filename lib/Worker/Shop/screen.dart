@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:viavita/WorkerShop/widget.dart';
-import 'package:viavita/appbarwidget.dart';
-import 'package:viavita/colors.dart';
+import 'package:viavita/CommonWidgets/appbarwidget.dart';
+import 'package:viavita/CommonWidgets/colors.dart';
+import 'package:viavita/Worker/Shop/widget.dart';
 
 class WorkerShopWidget extends StatefulWidget {
   const WorkerShopWidget({super.key});

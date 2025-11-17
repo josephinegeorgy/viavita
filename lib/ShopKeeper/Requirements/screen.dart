@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:viavita/ShopkeeperRequirements/widget.dart';
-import 'package:viavita/textfieldwidget.dart';
-import 'package:viavita/appbarwidget.dart';
-import 'package:viavita/colors.dart';
-import 'package:viavita/filledbuttonwidget.dart';
-import 'package:viavita/unfilledbuttonwidget.dart';
+
+import 'package:viavita/CommonWidgets/appbarwidget.dart';
+import 'package:viavita/CommonWidgets/colors.dart';
+import 'package:viavita/CommonWidgets/filledbuttonwidget.dart';
+import 'package:viavita/CommonWidgets/unfilledbuttonwidget.dart';
+import 'package:viavita/ShopKeeper/Requirements/widget.dart';
 
 class SKRequirementsWidget extends StatefulWidget {
   const SKRequirementsWidget({super.key});

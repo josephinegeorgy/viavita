@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:viavita/colors.dart';
+import 'package:viavita/CommonWidgets/colors.dart';
 
 class WorkerInfoWidget extends StatelessWidget {
   final String icondata;

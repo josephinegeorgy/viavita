@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:viavita/Requirements/screen.dart';
-import 'package:viavita/ShopkeeperRequirements/screen.dart';
-import 'package:viavita/SubscriptionDetail/screen.dart';
-import 'package:viavita/SubscriptionPlans/screen.dart';
+import 'package:viavita/Worker/Requirements/screen.dart';
+
 
 void main() {
   runApp(const MyApp());

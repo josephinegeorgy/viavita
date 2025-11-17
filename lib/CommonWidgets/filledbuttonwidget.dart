@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:viavita/WorkerShop/screen.dart';
-import 'package:viavita/colors.dart';
+import 'package:viavita/Worker/SubscriptionDetail/screen.dart';
+import 'package:viavita/CommonWidgets/colors.dart';
 
 class FilledButtonWidget extends StatelessWidget {
   final String buttontext;
@@ -17,8 +17,8 @@ class FilledButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        Navigator.push(context, MaterialPageRoute(builder:  (context) => WorkerShopWidget()));
+        onTap: () {
+        Navigator.push(context, MaterialPageRoute(builder:  (context) => SubscriptionDetailWidget()));
       },
       child: Container(
         width: buttonwidth,

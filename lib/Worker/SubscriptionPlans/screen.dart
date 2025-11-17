@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:viavita/SubscriptionPlans/Widget.dart';
-import 'package:viavita/appbarwidget.dart';
-import 'package:viavita/colors.dart';
+import 'package:viavita/Worker/SubscriptionPlans/Widget.dart';
+import 'package:viavita/CommonWidgets/appbarwidget.dart';
+import 'package:viavita/CommonWidgets/colors.dart';
 
 class SubscriptionPlanWidget extends StatelessWidget {
   const SubscriptionPlanWidget({super.key});

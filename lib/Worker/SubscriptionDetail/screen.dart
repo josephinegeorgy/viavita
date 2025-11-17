@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:viavita/Requirements/screen.dart';
-import 'package:viavita/textfieldwidget.dart';
-import 'package:viavita/SubscriptionPlans/Widget.dart';
-import 'package:viavita/appbarwidget.dart';
-import 'package:viavita/filledbuttonwidget.dart';
-import 'package:viavita/colors.dart';
+import 'package:viavita/Worker/Requirements/screen.dart';
+import 'package:viavita/CommonWidgets/textfieldwidget.dart';
+import 'package:viavita/Worker/SubscriptionPlans/Widget.dart';
+import 'package:viavita/CommonWidgets/appbarwidget.dart';
+import 'package:viavita/CommonWidgets/filledbuttonwidget.dart';
+import 'package:viavita/CommonWidgets/colors.dart';
 
 class SubscriptionDetailWidget extends StatefulWidget {
   const SubscriptionDetailWidget({super.key});
