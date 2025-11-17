@@ -15,4 +15,9 @@ class AppColors {
   static const Color badgeTextColor = Color.fromARGB(255, 255, 165, 0);
   static const Color captionColorDark = Color.fromARGB(255, 123, 131, 137);
   static const Color textfieldborder = Color.fromARGB(255, 204, 204, 204);
+
+  static Color containerborder = Color.fromARGB(255, 255, 227, 219);
+  static Color containerbg1 = Color.fromARGB(255, 255, 243, 240);
+  static Color containerbg2 = Color.fromARGB(255, 224, 255, 228);
+  static Color containerbg3 = Color.fromARGB(255, 255, 248, 246);
 }

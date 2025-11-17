@@ -26,7 +26,7 @@ class WorkerInfoWidget extends StatelessWidget {
           CircleAvatar(
             radius: 25,
             backgroundColor: AppColors.iconbg,
-            child: Image.asset(icondata,width: 24,height:24),
+            child: Image.asset(icondata,scale: 5,),
           ),
           SizedBox(width: mediaquery.width * 0.05),
           Column(

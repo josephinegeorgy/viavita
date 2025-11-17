@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:viavita/ShopKeeper/Homepage/screen.dart';
+import 'package:viavita/Worker/Home/screen.dart';
 import 'package:viavita/Worker/Requirements/screen.dart';
 
 
@@ -15,6 +17,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(fontFamily: GoogleFonts.poppins().fontFamily),
-      home: RequirementsWidget(), debugShowCheckedModeBanner: false);
+      home: SKHomePageWidget(), debugShowCheckedModeBanner: false);
   }
 }
